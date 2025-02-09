@@ -1,0 +1,257 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  com.mojang.blaze3d.matrix.MatrixStack
+ *  com.mojang.blaze3d.vertex.IVertexBuilder
+ *  net.minecraft.client.renderer.model.Model
+ *  net.minecraft.client.renderer.model.ModelRenderer
+ *  net.minecraft.inventory.EquipmentSlotType
+ */
+package com.meteor.extrabotany.client.model.armor;
+
+import com.meteor.extrabotany.client.model.ModelArmor;
+import com.mojang.blaze3d.matrix.MatrixStack;
+import com.mojang.blaze3d.vertex.IVertexBuilder;
+import net.minecraft.client.renderer.model.Model;
+import net.minecraft.client.renderer.model.ModelRenderer;
+import net.minecraft.inventory.EquipmentSlotType;
+
+public class ModelMikuArmor
+extends ModelArmor {
+    private final ModelRenderer helmAnchor;
+    private final ModelRenderer bodyAnchor;
+    private final ModelRenderer body;
+    private final ModelRenderer armLAnchor;
+    private final ModelRenderer armRAnchor;
+    private final ModelRenderer pantsAnchor;
+    private final ModelRenderer legL;
+    private final ModelRenderer legR;
+    private final ModelRenderer bootL;
+    private final ModelRenderer bootR;
+    private final ModelRenderer lefthair;
+    private final ModelRenderer righthair;
+    private final ModelRenderer circle2;
+    private final ModelRenderer circle1;
+    private final ModelRenderer hat;
+    private final ModelRenderer oupai;
+    private final ModelRenderer Shape1;
+    private final ModelRenderer pifeng;
+    private final ModelRenderer Shape2;
+    private final ModelRenderer a1;
+    private final ModelRenderer a2;
+    private final ModelRenderer a3;
+    private final ModelRenderer c2;
+    private final ModelRenderer c1;
+    private final ModelRenderer b1;
+    private final ModelRenderer b2;
+    private final ModelRenderer b3;
+    private final ModelRenderer legLeft;
+    private final ModelRenderer legRight;
+
+    public ModelMikuArmor(EquipmentSlotType slot) {
+        super(slot);
+        this.field_78090_t = 128;
+        this.field_78089_u = 128;
+        float s = 0.01f;
+        this.helmAnchor = new ModelRenderer((Model)this, 0, 0);
+        this.helmAnchor.func_78793_a(0.0f, 0.0f, 0.0f);
+        this.helmAnchor.func_228301_a_(-1.0f, -2.0f, 0.0f, 2.0f, 2.0f, 2.0f, s);
+        this.bodyAnchor = new ModelRenderer((Model)this, 0, 0);
+        this.bodyAnchor.func_78793_a(0.0f, 0.0f, 0.0f);
+        this.bodyAnchor.func_228301_a_(-1.0f, 0.0f, -1.0f, 2.0f, 2.0f, 2.0f, s);
+        this.body = new ModelRenderer((Model)this, 16, 16);
+        this.body.func_228300_a_(-4.0f, 0.0f, -2.0f, 8.0f, 12.0f, 4.0f);
+        this.body.func_78793_a(0.0f, 0.0f, 0.0f);
+        this.body.func_78787_b(64, 32);
+        this.body.field_78809_i = true;
+        this.setRotateAngle(this.body, 0.0f, 0.0f, 0.0f);
+        this.armLAnchor = new ModelRenderer((Model)this, 0, 0);
+        this.armLAnchor.field_78809_i = true;
+        this.armLAnchor.func_78793_a(4.0f, 2.0f, 0.0f);
+        this.armLAnchor.func_228301_a_(0.0f, -1.0f, -1.0f, 2.0f, 2.0f, 2.0f, s);
+        this.armRAnchor = new ModelRenderer((Model)this, 0, 0);
+        this.armRAnchor.field_78809_i = true;
+        this.armRAnchor.func_78793_a(-4.0f, 2.0f, 0.0f);
+        this.armRAnchor.func_228301_a_(-2.0f, -1.0f, -1.0f, 2.0f, 2.0f, 2.0f, s);
+        this.pantsAnchor = new ModelRenderer((Model)this, 0, 0);
+        this.pantsAnchor.func_78793_a(0.0f, 0.0f, 0.0f);
+        this.pantsAnchor.func_228301_a_(-1.0f, 0.0f, -1.0f, 2.0f, 2.0f, 2.0f, s);
+        this.legR = new ModelRenderer((Model)this, 0, 0);
+        this.legR.func_228301_a_(-2.0f, 0.0f, -2.0f, 0.0f, 0.0f, 0.0f, s);
+        this.legR.func_78793_a(-2.0f, 12.0f, 0.0f);
+        this.legR.func_78787_b(64, 32);
+        this.legR.field_78809_i = true;
+        this.setRotateAngle(this.legR, 0.0f, 0.0f, 0.0f);
+        this.legL = new ModelRenderer((Model)this, 0, 0);
+        this.legL.func_228301_a_(-2.0f, 0.0f, -2.0f, 0.0f, 0.0f, 0.0f, s);
+        this.legL.func_78793_a(2.0f, 12.0f, 0.0f);
+        this.legL.func_78787_b(64, 32);
+        this.legL.field_78809_i = true;
+        this.setRotateAngle(this.legL, 0.0f, 0.0f, 0.0f);
+        this.bootL = new ModelRenderer((Model)this, 0, 0);
+        this.bootL.field_78809_i = true;
+        this.bootL.func_78793_a(1.9f, 12.0f, 0.0f);
+        this.bootL.func_228301_a_(-2.39f, 8.5f, -2.49f, 2.0f, 2.0f, 2.0f, s);
+        this.bootR = new ModelRenderer((Model)this, 0, 0);
+        this.bootR.func_78793_a(-2.0f, 12.0f, 0.0f);
+        this.bootR.func_228301_a_(-2.5f, 8.5f, -2.51f, 2.0f, 2.0f, 2.0f, s);
+        this.lefthair = new ModelRenderer((Model)this, 0, 33);
+        this.lefthair.func_228301_a_(0.0f, 0.0f, 0.0f, 2.0f, 12.0f, 2.0f, s);
+        this.lefthair.func_78793_a(2.5f, -9.0f, -1.0f);
+        this.lefthair.func_78787_b(128, 128);
+        this.lefthair.field_78809_i = true;
+        this.setRotateAngle(this.lefthair, 0.2617994f, 0.0f, -0.4014257f);
+        this.righthair = new ModelRenderer((Model)this, 9, 33);
+        this.righthair.func_228301_a_(0.0f, 0.0f, 0.0f, 2.0f, 12.0f, 2.0f, s);
+        this.righthair.func_78793_a(-4.5f, -9.8f, 1.0f);
+        this.righthair.func_78787_b(128, 128);
+        this.righthair.field_78809_i = true;
+        this.setRotateAngle(this.righthair, 0.2617994f, 0.0f, 0.4014257f);
+        this.circle2 = new ModelRenderer((Model)this, 18, 33);
+        this.circle2.func_228301_a_(0.0f, 0.0f, 0.0f, 1.0f, 3.0f, 3.0f, s);
+        this.circle2.func_78793_a(4.5f, -10.0f, -1.0f);
+        this.circle2.func_78787_b(128, 128);
+        this.circle2.field_78809_i = true;
+        this.setRotateAngle(this.circle2, 0.0f, 0.0f, -0.1047198f);
+        this.circle1 = new ModelRenderer((Model)this, 27, 33);
+        this.circle1.func_228301_a_(0.0f, 0.0f, 0.0f, 1.0f, 3.0f, 3.0f, s);
+        this.circle1.func_78793_a(-5.5f, -10.0f, -1.0f);
+        this.circle1.func_78787_b(128, 128);
+        this.circle1.field_78809_i = true;
+        this.setRotateAngle(this.circle1, 0.0f, 0.0f, 0.1047198f);
+        this.hat = new ModelRenderer((Model)this, 36, 33);
+        this.hat.func_228301_a_(0.0f, 0.0f, 0.0f, 10.0f, 3.0f, 1.0f, s);
+        this.hat.func_78793_a(-5.0f, -9.0f, -1.3f);
+        this.hat.func_78787_b(128, 128);
+        this.hat.field_78809_i = true;
+        this.setRotateAngle(this.hat, 0.0f, 0.0f, 0.0f);
+        this.oupai = new ModelRenderer((Model)this, 0, 48);
+        this.oupai.func_228301_a_(0.0f, 0.0f, 0.0f, 6.0f, 3.0f, 3.0f, s);
+        this.oupai.func_78793_a(-3.0f, 2.0f, -4.0f);
+        this.oupai.func_78787_b(128, 128);
+        this.oupai.field_78809_i = true;
+        this.setRotateAngle(this.oupai, 0.6108652f, 0.0f, 0.0f);
+        this.Shape1 = new ModelRenderer((Model)this, 19, 48);
+        this.Shape1.func_228301_a_(0.0f, 0.0f, 0.0f, 5.0f, 2.0f, 6.0f, s);
+        this.Shape1.func_78793_a(-1.0f, -3.0f, -3.0f);
+        this.Shape1.func_78787_b(128, 128);
+        this.Shape1.field_78809_i = true;
+        this.setRotateAngle(this.Shape1, 0.0f, 0.0f, 0.1745329f);
+        this.Shape2 = new ModelRenderer((Model)this, 42, 48);
+        this.Shape2.func_228301_a_(0.0f, 0.0f, 0.0f, 5.0f, 2.0f, 6.0f, s);
+        this.Shape2.func_78793_a(-4.0f, -2.0f, -3.0f);
+        this.Shape2.func_78787_b(128, 128);
+        this.Shape2.field_78809_i = true;
+        this.setRotateAngle(this.Shape2, 0.0f, 0.0f, -0.1745329f);
+        this.pifeng = new ModelRenderer((Model)this, 65, 48);
+        this.pifeng.func_228301_a_(0.0f, 0.0f, 0.0f, 8.0f, 12.0f, 1.0f, s);
+        this.pifeng.func_78793_a(-4.0f, 0.0f, 2.0f);
+        this.pifeng.func_78787_b(128, 128);
+        this.pifeng.field_78809_i = true;
+        this.setRotateAngle(this.pifeng, 0.1396263f, 0.0f, 0.0f);
+        this.a1 = new ModelRenderer((Model)this, 0, 65);
+        this.a1.func_228301_a_(0.0f, 0.0f, 0.0f, 6.0f, 7.0f, 1.0f, s);
+        this.a1.func_78793_a(-3.0f, 9.0f, -2.0f);
+        this.a1.func_78787_b(128, 128);
+        this.a1.field_78809_i = true;
+        this.setRotateAngle(this.a1, -0.2617994f, 0.0f, 0.0f);
+        this.a2 = new ModelRenderer((Model)this, 15, 65);
+        this.a2.func_228301_a_(0.0f, 0.0f, 0.0f, 3.0f, 7.0f, 1.0f, s);
+        this.a2.func_78793_a(2.7f, 9.0f, -2.0f);
+        this.a2.func_78787_b(128, 128);
+        this.a2.field_78809_i = true;
+        this.setRotateAngle(this.a2, -0.2617994f, -0.5235988f, 0.0f);
+        this.a3 = new ModelRenderer((Model)this, 24, 65);
+        this.a3.func_228301_a_(0.0f, 0.0f, 0.0f, 3.0f, 7.0f, 1.0f, s);
+        this.a3.func_78793_a(-2.2f, 9.0f, -1.0f);
+        this.a3.func_78787_b(128, 128);
+        this.a3.field_78809_i = true;
+        this.setRotateAngle(this.a3, 0.2617994f, 3.665191f, 0.0f);
+        this.c2 = new ModelRenderer((Model)this, 33, 65);
+        this.c2.func_228301_a_(0.0f, 0.0f, 0.0f, 1.0f, 6.0f, 3.0f, s);
+        this.c2.func_78793_a(-4.0f, 9.0f, -2.0f);
+        this.c2.func_78787_b(128, 128);
+        this.c2.field_78809_i = true;
+        this.setRotateAngle(this.c2, 0.0f, 0.0f, 0.3490659f);
+        this.c1 = new ModelRenderer((Model)this, 42, 65);
+        this.c1.func_228301_a_(0.0f, 0.0f, 0.0f, 1.0f, 6.0f, 3.0f, s);
+        this.c1.func_78793_a(3.0f, 9.0f, -2.0f);
+        this.c1.func_78787_b(128, 128);
+        this.c1.field_78809_i = true;
+        this.setRotateAngle(this.c1, 0.0f, 0.0f, -0.3490659f);
+        this.b1 = new ModelRenderer((Model)this, 51, 65);
+        this.b1.func_228301_a_(0.0f, 0.0f, 0.0f, 6.0f, 7.0f, 1.0f, s);
+        this.b1.func_78793_a(-3.0f, 9.0f, 1.0f);
+        this.b1.func_78787_b(128, 128);
+        this.b1.field_78809_i = true;
+        this.setRotateAngle(this.b1, 0.2617994f, 0.0f, 0.0f);
+        this.b2 = new ModelRenderer((Model)this, 66, 65);
+        this.b2.func_228301_a_(0.0f, 0.0f, 0.0f, 3.0f, 7.0f, 1.0f, s);
+        this.b2.func_78793_a(5.5f, 9.0f, 0.5f);
+        this.b2.func_78787_b(128, 128);
+        this.b2.field_78809_i = true;
+        this.setRotateAngle(this.b2, -0.2617994f, 3.665191f, 0.0f);
+        this.b3 = new ModelRenderer((Model)this, 75, 65);
+        this.b3.func_228301_a_(0.0f, 0.0f, 0.0f, 3.0f, 7.0f, 1.0f, s);
+        this.b3.func_78793_a(-4.5f, 9.0f, -0.5f);
+        this.b3.func_78787_b(128, 128);
+        this.b3.field_78809_i = true;
+        this.setRotateAngle(this.b3, 0.2617994f, -0.5235988f, 0.0f);
+        this.legRight = new ModelRenderer((Model)this, 0, 16);
+        this.legRight.func_228301_a_(-2.0f, 0.0f, -2.0f, 4.0f, 12.0f, 4.0f, s);
+        this.legRight.func_78793_a(0.0f, 0.0f, 0.0f);
+        this.legRight.func_78787_b(64, 32);
+        this.legRight.field_78809_i = true;
+        this.setRotateAngle(this.legRight, 0.0f, 0.0f, 0.0f);
+        this.legLeft = new ModelRenderer((Model)this, 0, 16);
+        this.legLeft.func_228301_a_(-2.0f, 0.0f, -2.0f, 4.0f, 12.0f, 4.0f, s);
+        this.legLeft.func_78793_a(0.0f, 0.0f, 0.0f);
+        this.legLeft.func_78787_b(64, 32);
+        this.legLeft.field_78809_i = true;
+        this.setRotateAngle(this.legLeft, 0.0f, 0.0f, 0.0f);
+        this.helmAnchor.func_78792_a(this.hat);
+        this.helmAnchor.func_78792_a(this.lefthair);
+        this.helmAnchor.func_78792_a(this.righthair);
+        this.helmAnchor.func_78792_a(this.circle1);
+        this.helmAnchor.func_78792_a(this.circle2);
+        this.bodyAnchor.func_78792_a(this.body);
+        this.body.func_78792_a(this.oupai);
+        this.body.func_78792_a(this.pifeng);
+        this.pantsAnchor.func_78792_a(this.a1);
+        this.pantsAnchor.func_78792_a(this.a2);
+        this.pantsAnchor.func_78792_a(this.a3);
+        this.pantsAnchor.func_78792_a(this.b3);
+        this.pantsAnchor.func_78792_a(this.b1);
+        this.pantsAnchor.func_78792_a(this.b2);
+        this.pantsAnchor.func_78792_a(this.c1);
+        this.pantsAnchor.func_78792_a(this.c2);
+        this.bootL.func_78792_a(this.legLeft);
+        this.bootR.func_78792_a(this.legRight);
+    }
+
+    public void func_225598_a_(MatrixStack ms, IVertexBuilder buffer, int light, int overlay, float r, float g, float b, float a) {
+        this.helmAnchor.field_78806_j = this.slot == EquipmentSlotType.HEAD;
+        this.bodyAnchor.field_78806_j = this.slot == EquipmentSlotType.CHEST;
+        this.armRAnchor.field_78806_j = this.slot == EquipmentSlotType.CHEST;
+        this.armLAnchor.field_78806_j = this.slot == EquipmentSlotType.CHEST;
+        this.legR.field_78806_j = this.slot == EquipmentSlotType.LEGS;
+        this.legL.field_78806_j = this.slot == EquipmentSlotType.LEGS;
+        this.bootL.field_78806_j = this.slot == EquipmentSlotType.FEET;
+        this.bootR.field_78806_j = this.slot == EquipmentSlotType.FEET;
+        this.field_178720_f.field_78806_j = false;
+        this.field_78116_c = this.helmAnchor;
+        this.field_78115_e = this.bodyAnchor;
+        this.field_178723_h = this.armRAnchor;
+        this.field_178724_i = this.armLAnchor;
+        if (this.slot == EquipmentSlotType.LEGS) {
+            this.field_78115_e = this.pantsAnchor;
+            this.field_178721_j = this.legR;
+            this.field_178722_k = this.legL;
+        } else {
+            this.field_178721_j = this.bootR;
+            this.field_178722_k = this.bootL;
+        }
+        super.func_225598_a_(ms, buffer, light, overlay, r, g, b, a);
+    }
+}
